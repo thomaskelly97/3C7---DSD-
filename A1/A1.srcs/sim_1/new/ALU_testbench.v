@@ -1,58 +1,67 @@
 `timescale 1 ns/1 ps
 
 module ALU_testbench;
-   // signal declaration
-   reg  [5:0] test_in0, test_in1;
-   reg [2:0] select; 
-   wire [5:0] test_out;
+   //declare signals 
+   reg  [5:0] test_in0, test_in1; //inputs a,b 
+   reg [2:0] select; //operation code 
+   wire [5:0] test_out; //output 
+   wire overflow; 
 
    // instantiate the circuit under test
-   ALU_module uut
-      (.a(test_in0), .b(test_in1), .out(test_out), .op(select));
+   ALU_module uut 
+      (.a(test_in0), .b(test_in1), .op(select), .out(test_out), .overflow(overflow));
 
-   //  test vector generator
-    
+   
+   //Initialise all inputs 
    initial
    begin
+    test_in0 = 0; 
+    test_in1 = 0; 
+    select = 0; 
+   end 
+   
+   //ASSIGN DIFFERENT TEST VECTORS. 1 for each operation! 
+   always @(test_in0 or test_in1)
+   begin 
    //TEST 1 
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b000; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
-   //TEST 2
+   #200;
+    //TEST 2 
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b001; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
+   #200;
    //TEST 3
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b010; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
-     //TEST 4
+   #200;
+   //TEST 4
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b011; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
-     //TEST 5
+   #200;
+   //TEST 5 
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b100; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
-     //TEST 6
+   #200;
+   //TEST 6
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b101; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
-     //TEST 7
+   #200;
+   //TEST 7 
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b110; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-   #200
-     //TEST 8
+   #200;
+   //TEST 8 
+   test_in0 = 6'b000011;
+   test_in1 = 6'b000001;
    select = 3'b111; 
-   test_in0 = 6'b000101;
-   test_in1 = 6'b000101;
-      $stop;
+   #200;
    end
-   endmodule 
+endmodule 

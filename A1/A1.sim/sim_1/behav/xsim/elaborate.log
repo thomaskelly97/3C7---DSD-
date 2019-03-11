@@ -1,16 +1,21 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto a6829af0f08b40bfaf5090ed53768f80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 6c8ba64123134d6889ef40ddae94eeaa --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v" Line 1. Module ripple_carry_adder_2_FA doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v" Line 1. Module ripple_carry_adder_2_FA doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v" Line 1. Module ripple_carry_adder_2_FA doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v" Line 1. Module ripple_carry_adder_2_FA doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.FullAdder
 Compiling module xil_defaultlib.ripple_carry_adder_2_FA
+Compiling module xil_defaultlib.XOR_module
+Compiling module xil_defaultlib.xor_ripple
+Compiling module xil_defaultlib.eq1
+Compiling module xil_defaultlib.eq2
+Compiling module xil_defaultlib.conn
 Compiling module xil_defaultlib.ALU_module
 Compiling module xil_defaultlib.ALU_testbench
 Compiling module xil_defaultlib.glbl

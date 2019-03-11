@@ -1,15 +1,15 @@
 // Listing 1.4
 //Thomas Kelly, Student Number: 16323455 
-//8 BIT GREATER THAN 
+//6 BIT GREATER THAN 
 module eq2
    (
-   //Creation of 8-bit inputs numbers a and b, and a 1 bit output 
+   //Creation of 6-bit inputs numbers a and b, and a 1 bit output 
     input  wire[5:0] a, b, 	
-    output wire out		
+    output wire [5:0] out		
    );
 
    //Declaring necessary connections needed. 
-   wire e0,e1,e2,e3,e4,e5,e6,e7,e8,e9, e10,e11,e12; //Comprise greater/equal/less connections 
+   wire e0,e1,e2,e3,e4,e5,e6,e7,e8; //Comprise greater/equal/less connections 
    wire o1,o2,o3; //Hold output possibilities 
             
     //Instantiate 4 2-bit greater than/equal to modules, using 8-bit arrays a,b as inputs 
@@ -21,8 +21,8 @@ module eq2
    //Examine each case that could make A bigger than B, or if the two are equal 
    assign o1 = e1 & e3; //the first 2bits of the number A are greater than/equal to B 
    assign o2 = e1 & e4 & e6; //If the first 4 bits are equal, check the 5th and 6th bits A>B
-   assign o3 = e1 & e4 & e7 & e9; //Similarly ^ 
-   assign out = e0 |o1 | o2 | o3 | e10; //Combine all of these cases under one variable statement
+   assign o3 = e1 & e4 & e7; //all equal  
+   assign out = e0 |o1 | o2 | o3; //Combine all of these cases under one variable statement
                                         //If any are met output = 1. 'OR' all cases. 
    
    

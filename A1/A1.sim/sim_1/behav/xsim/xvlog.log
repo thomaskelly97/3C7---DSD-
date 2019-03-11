@@ -1,10 +1,18 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ripple_carry_adder_2_FA
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/ALU_module.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/ALU_module.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU_module
-INFO: [VRFC 10-2458] undeclared symbol add_out, assumed default net type wire [C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/ALU_module.v:17]
-INFO: [VRFC 10-2458] undeclared symbol sub_out, assumed default net type wire [C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/ALU_module.v:23]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/XOR_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/Assignment 1/A1/A1.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/conn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conn
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Downloads/eq1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/gteq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/rippleXOR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_ripple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU_testbench

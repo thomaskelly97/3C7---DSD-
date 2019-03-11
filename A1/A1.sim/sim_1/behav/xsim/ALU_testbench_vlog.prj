@@ -2,7 +2,12 @@
 verilog xil_defaultlib  \
 "../../../../A1.srcs/sim_1/new/6bit_ripple_adder.v" \
 "../../../../A1.srcs/sim_1/new/ALU_module.v" \
+"../../../../A1.srcs/sim_1/new/XOR_module.v" \
 "../../../../A1.srcs/sim_1/new/adder.v" \
+"../../../../A1.srcs/sim_1/new/conn.v" \
+"../../../../../../../../../Downloads/eq1.v" \
+"../../../../A1.srcs/sim_1/new/gteq.v" \
+"../../../../A1.srcs/sim_1/new/rippleXOR.v" \
 "../../../../A1.srcs/sim_1/new/ALU_testbench.v" \
 
 # compile glbl module

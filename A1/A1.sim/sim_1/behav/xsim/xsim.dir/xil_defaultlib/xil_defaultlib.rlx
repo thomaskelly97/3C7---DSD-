@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/6bit_ripple_adder.v,1552132558,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/ALU_module.v,,ripple_carry_adder_2_FA,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/ALU_module.v,1552309331,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/XOR_module.v,,ALU_module,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/ALU_testbench.v,1552309129,verilog,,,,ALU_testbench,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/XOR_module.v,1552132577,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/adder.v,,XOR_module,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/adder.v,1552132540,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/conn.v,,FullAdder,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/conn.v,1552307604,verilog,,C:/Users/User/Downloads/eq1.v,,conn,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/gteq.v,1552309022,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/rippleXOR.v,,eq2,,,,,,,,
+C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/rippleXOR.v,1552132596,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/ALU_testbench.v,,xor_ripple,,,,,,,,
+C:/Users/User/Downloads/eq1.v,1552306682,verilog,,C:/Users/User/Documents/College/3C7/3C7---DSD-/A1/A1.srcs/sim_1/new/gteq.v,,eq1,,,,,,,,
