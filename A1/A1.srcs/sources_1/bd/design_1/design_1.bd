@@ -1,0 +1,221 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xcku5p-ffvb676-2-e",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "Adder": "",
+      "Subtractor": "",
+      "XOR_mod": "",
+      "conn_0": "",
+      "GreaterThanEqualTo": ""
+    },
+    "components": {
+      "Adder": {
+        "vlnv": "xilinx.com:module_ref:ripple_carry_adder_2_FA:1.0",
+        "xci_name": "design_1_ripple_carry_adder_2_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ripple_carry_adder_2_FA",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "overflow": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "Subtractor": {
+        "vlnv": "xilinx.com:module_ref:ripple_carry_adder_2_FA:1.0",
+        "xci_name": "design_1_ripple_carry_adder_2_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ripple_carry_adder_2_FA",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "overflow": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "XOR_mod": {
+        "vlnv": "xilinx.com:module_ref:xor_ripple:1.0",
+        "xci_name": "design_1_xor_ripple_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_ripple",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "conn_0": {
+        "vlnv": "xilinx.com:module_ref:conn:1.0",
+        "xci_name": "design_1_conn_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "conn",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "b": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "add_res": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sub_res": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "xor_res": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "gte_res": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "final": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "GreaterThanEqualTo": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Adder_sum": {
+        "ports": [
+          "Adder/sum",
+          "conn_0/add_res"
+        ]
+      },
+      "XOR_mod_out": {
+        "ports": [
+          "XOR_mod/out",
+          "conn_0/xor_res"
+        ]
+      },
+      "Subtractor_sum": {
+        "ports": [
+          "Subtractor/sum",
+          "conn_0/sub_res"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "conn_0/a",
+          "Adder/x",
+          "XOR_mod/x",
+          "Subtractor/x",
+          "GreaterThanEqualTo/probe_in0"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "Adder/y",
+          "conn_0/b",
+          "XOR_mod/y",
+          "Subtractor/y"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "Adder/sel",
+          "conn_0/sel",
+          "Subtractor/sel",
+          "GreaterThanEqualTo/probe_in1"
+        ]
+      },
+      "GreaterThanEqualTo_probe_out0": {
+        "ports": [
+          "GreaterThanEqualTo/probe_out0",
+          "conn_0/gte_res"
+        ]
+      }
+    }
+  }
+}

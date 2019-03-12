@@ -1,0 +1,20 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst GreaterThanEqualTo -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace inst XOR_mod -pg 1 -lvl 1 -y -80 -defaultsOSRD
+preplace inst Adder -pg 1 -lvl 1 -y -210 -defaultsOSRD
+preplace inst conn_0 -pg 1 -lvl 2 -y -70 -defaultsOSRD
+preplace inst Subtractor -pg 1 -lvl 1 -y 50 -defaultsOSRD
+preplace netloc Adder_sum 1 1 1 500
+preplace netloc XOR_mod_out 1 1 1 490
+preplace netloc Net1 1 0 2 -10 -310 530
+preplace netloc Net 1 0 2 0 -300 520
+preplace netloc Net2 1 0 2 10 -290 510
+preplace netloc Subtractor_sum 1 1 1 510
+preplace netloc GreaterThanEqualTo_probe_out0 1 1 1 530
+levelinfo -pg 1 -30 360 650 780 -top -330 -bot 370
+"
+}
+

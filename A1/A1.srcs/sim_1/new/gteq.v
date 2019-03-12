@@ -11,6 +11,7 @@ module eq2
    //Declaring necessary connections needed. 
    wire e0,e1,e2,e3,e4,e5,e6,e7,e8; //Comprise greater/equal/less connections 
    wire o1,o2,o3; //Hold output possibilities 
+   wire [5:0] o4;
             
     //Instantiate 4 2-bit greater than/equal to modules, using 8-bit arrays a,b as inputs 
    eq1 eq_bit0 (.i0(a[0]), .i1(a[1]), .j0(b[0]), .j1(b[1]), .gr(e0), .eq(e1), .ls(e2));
@@ -22,8 +23,8 @@ module eq2
    assign o1 = e1 & e3; //the first 2bits of the number A are greater than/equal to B 
    assign o2 = e1 & e4 & e6; //If the first 4 bits are equal, check the 5th and 6th bits A>B
    assign o3 = e1 & e4 & e7; //all equal  
-   assign out = e0 |o1 | o2 | o3; //Combine all of these cases under one variable statement
-                                        //If any are met output = 1. 'OR' all cases. 
+   assign o4 = e0 |o1 | o2 | o3; //Combine all of these cases under one variable statement
+   assign out = o4 & a;                 //If any are met output = 1. 'OR' all cases. 
    
    
 endmodule

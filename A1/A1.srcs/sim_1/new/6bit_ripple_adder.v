@@ -59,8 +59,8 @@ module ripple_carry_adder_2_FA
                   .b(y[5]^ sel),
                   .cin(c_out[4]),
                   .s(sum[5]),
-                  .cout(c_out[5])
+                  .cout(overflow)
                   );  
-              assign overflow = c_out[5]; 
+              //assign overflow = c_out[5]; 
  
 endmodule 
