@@ -1,0 +1,4 @@
+Running: xsim.dir/d_ff_reset_behav/xsimk.exe -simmode gui -wdb d_ff_reset_behav.wdb -simrunnum 0 -socket 65333
+Design successfully loaded
+Design Loading Memory Usage: 5352 KB (Peak: 5352 KB)
+Design Loading CPU Usage: 77 ms

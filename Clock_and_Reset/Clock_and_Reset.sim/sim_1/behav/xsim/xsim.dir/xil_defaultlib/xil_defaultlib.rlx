@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/User/Documents/College/3C7/3C7---DSD-/Clock_and_Reset/Clock_and_Reset.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/User/Downloads/clk_testbench.v,1552932790,verilog,,,,clock_testbench,,,,,,,,
+C:/Users/User/Downloads/d_type_ff.v,1552917420,verilog,,C:/Users/User/Downloads/clk_testbench.v,,d_ff_reset,,,,,,,,

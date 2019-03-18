@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Downloads/d_type_ff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_ff_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Downloads/clk_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_testbench
